@@ -1,0 +1,298 @@
+%A sample thesis file for undergraduate students 
+%T.C. Istanbul Arel University
+%Computer Engineering & Software Engineering
+\documentclass[12pt]{report}
+\usepackage{arel_thesis}
+
+\usepackage[top= 1cm, bottom= 2.54cm, left= 3.17cm, right= 3.17cm]{geometry}
+
+\usepackage{lipsum}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage[ruled,vlined]{algorithm2e}
+
+
+
+
+
+
+
+%%%% Declarations %%%%
+
+\degree{Bachelor of Science}
+\department{Computer Engineering}
+\gradyear{June 2023}
+\studentname{Student Name and Surname}
+\studentid{Student ID}
+\title{TITLE OF THE THESIS}
+\trtitle{TEZIN TÜRKÇE ADI}
+\supervisor{Supervisor FULL NAME}
+
+
+\begin{document}
+
+\setstretch{1.5}
+\maketitle
+
+
+\begin{preliminary}
+	
+	\chapter*{Acknowledgement}
+
+	The acknowledgement is a statement of gratitude for assistance to accomplish the project. It may mention the names of the people the project members want to thank for their support in the project (usually parents, friends, instructors).
+
+
+	\chapter*{Undertaking}
+	This is to declare that the project entitled “Project Title” is an original work done by undersigned, in partial fulfillment of the requirements for the degree “Bachelor of Science in Computer Engineering” at Computer Engineering Department, Faculty of Engineering, Istanbul Arel University.
+
+	
+	All the analysis, design and system development have been accomplished by the undersigned. Moreover, this project has not been submitted to any other college or university.
+	
+	
+\newpage
+%%%%%%ENGLISH ABSTRACT HERE%%%%%%%
+\begin{abstract}
+	Write abstract here. Do not go over 300 word limit.
+\end{abstract}
+
+
+%%%%%%%TURKISH ABSTRACT HERE%%%%%%%
+\begin{ozet}
+	Türkçe özet. 300 kelimeyi aşmasın
+\end{ozet}
+
+%%%%%%%%%%DO NOT CHANGE BELOW%%%%%%%%%%%%%%%
+%Add Table of Contents
+\setstretch{1.0}
+\tableofcontents
+
+%Add List of Figures
+\listoffigures
+\addcontentsline{toc}{chapter}{\listfigurename}%
+
+%Add List of Table
+\listoftables
+\addcontentsline{toc}{chapter}{\listtablename}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{preliminary}
+\setstretch{1.5}
+
+
+%%%%%THESIS STARTS HERE%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\chapter{Introduction}
+
+A good thesis is self-contained. Anyone with a bachelor degree in computer engineering should be able to understand it. You should refer to the literature for any detail that is not strictly relevant to your text.
+
+In this part, talk about the general motivation for your work, context and goals. You should mention the following:
+
+You should technically connect to main concepts in your field and give an outline of the project. State the research/engineering question that you want to answer with this project. In other words, try to answer the following questions: (i) Why are you doing this project? (What is the problem you are trying to solve?), (ii) Why is your project relevant?, (iii) What is your strategy to solve this problem?
+
+At the end of this chapter, give a \textbf{Thesis Outline} paragraph, summarizing what each chapter will cover. An example:
+
+\textit{The remainder of this thesis is organized as follows. Chapter 2 reviews the background and related work relevant to the research problem, including previous solutions, key concepts, and technologies used. Chapter 3 presents the methodology, describing the design, implementation, and experimental setup of the system, algorithm, or application. Chapter 4 reports the results of the project and evaluates the effectiveness of the proposed solution, including quantitative metrics, comparisons, and discussion of limitations. Finally, Chapter 5 concludes the thesis by summarizing the main findings, highlighting contributions, discussing limitations, and suggesting directions for future work.}
+
+
+
+
+
+
+\chapter{Background}
+
+The Background chapter provides the necessary context for your project and reviews relevant literature and prior work. Its purpose is to help the reader understand the problem you are addressing and how your approach fits into the existing body of knowledge.
+
+In this chapter, you should include:
+
+\begin{itemize}
+    \item A review of relevant literature, including previous research, solutions, or systems in your field.
+    \item Key concepts, algorithms, frameworks, or technologies needed to understand your project.
+    \item Comparisons of existing solutions, highlighting their strengths and weaknesses.
+    \item Any assumptions, constraints, or definitions that are necessary for understanding your method.
+    \item Figures, tables, or diagrams that help explain prior work or technical background.
+\end{itemize}
+
+Make sure to cite all sources properly and clearly explain how the background informs your own project. Avoid adding your own results in this chapter — focus on summarizing what is already known.
+
+ 
+
+
+
+\chapter{Method}
+
+This part is the technical core of the thesis. Lay out how you answered your research question, specifying your design, experiments, simulations, or system development. Point out any difficulties you encountered. Describe your system/algorithm/method from a high-level first, then present key components in detail.
+
+You must include the following:
+
+\begin{itemize}
+    \item The overall design or approach of your system, algorithm, or method.
+    \item Details of experiments, simulations, or implementations you conducted.
+    \item Any datasets, input sources, or materials you used (e.g., publicly available datasets such as Kaggle datasets, open-source APIs, or sample data), including relevant preprocessing steps and any assumptions.
+    \item Any difficulties or challenges you encountered and how you addressed them.
+    \item A high-level description first, followed by more detailed explanations of key components.
+\end{itemize}
+
+Use figures, tables, or algorithms to clarify your explanations. Every figure, table, or algorithm must be cited in the text.
+
+
+
+
+\chapter{Results and Evaluation}
+
+This chapter presents the outcomes of your project and evaluates them. It shows what your system, model, algorithm, or application produces and analyzes its effectiveness. The goal is to demonstrate how well your solution addresses \textbf{your} research question or meets the project objectives.
+
+You should include (if applicable):
+
+\begin{itemize}
+    \item Screenshots, tables, charts, or figures demonstrating results from your application, model, or system.
+    \item Quantitative metrics such as performance, accuracy, throughput, or efficiency.
+    \item Comparisons with baseline methods, existing solutions, or expected outcomes.
+    \item Observations about system behavior, user interactions, or model performance.
+    \item Discussion of strengths, limitations, and potential improvements.
+    \item Any unexpected findings or challenges encountered during testing.
+\end{itemize}
+
+Make sure that every figure, table, or chart is cited in the text and that you relate the results to your research questions or project objectives.
+
+
+\chapter{Conclusion}
+
+This chapter summarizes your work, highlights the main contributions, and reflects on the outcomes of your project. This is your final opportunity to emphasize what you achieved and what can be learned from your work.
+
+You should include:
+
+\begin{itemize}
+    \item A brief summary of the research problem and the approach you took.
+    \item The main results or achievements of your project.
+    \item Key contributions to the field, project, or application.
+    \item Discussion of limitations and any challenges that were encountered.
+    \item Suggestions for future work, improvements, or extensions of your project.
+\end{itemize}
+
+Keep this chapter concise and focused. Avoid introducing new data, results, or detailed explanations here — all details should have been presented in earlier chapters.
+
+
+\chapter{Examples}
+
+This chapter is for teaching you the basics. You remove this chapter in the final document.
+
+\section{Citing and adding a reference}
+
+Citations are a critical part of academic writing. There are different citation styles such as IEEE, APA, Chicago, etc. In this thesis, we use IEEE style. There are two acceptable ways to use citations in your writing:
+
+\textbf{(i) General statement}: Security is a major challenge in resource-constrained IoT environments, and various lightweight cryptographic approaches have been proposed in the literature \cite{kocatekin2023adaptation}.
+
+
+\textbf{(ii) Author-based statement}: Kocatekin \& Çalışkan \cite{kocatekin2023adaptation} address the security challenges of resource-constrained Internet of Things (IoT) ...
+
+
+\LaTeX~ automatically manage citations and bibliography through BibTeX. Instead of typing references manually, you store them in \verb|references.bib| file, and cite them in your text. The References will be automatically created in IEEE format and added to the end of your thesis.
+
+
+
+\section{Adding a figure}
+
+Figures are useful for visualizing data, models, or concepts. However, figures should only be included if they are directly relevant to the discussion in your text. Every Figure must be cited in the main text. Do not insert a figure without referring to it. When you are adding a figure, make sure you have a meaningful caption for it. You can also change the scale by changing the \verb|width| in the tex file. 
+
+Example: 
+
+
+As shown in Figure \ref{fig:logo} below, we have a circular logo.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.1\linewidth]{logo}
+	\caption{Logo of the University}
+	\label{fig:logo}
+\end{figure}
+
+\section{Adding a table}
+
+Tables are used to present structured information such as data, comparisons, or summaries. Only include a table if it adds value to your discussion. Every table must be cited in the main text. Do not insert a table without referring to it. 
+
+Example:
+
+
+As summarized in Table~\ref{tab:table}, the proposed method outperforms the baseline.
+
+
+\begin{table}[h]
+	\caption{Your caption.}
+	\centering
+\begin{tabular}{|l|l|l|l|l|}
+	\hline
+	\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\ \hline
+	1          & 2          & 3          & 4          & 5          \\ \hline
+	6          & 7          & 8          & 9          & 10         \\ \hline
+	11         & 12         & 13         & 14         & 15         \\ \hline
+	\end{tabular}
+	\label{tab:table}
+	
+\end{table}
+
+
+\section{Adding an Equation}
+
+Equations are important for expressing mathematical relationships. Every equation must be cited in the main text. Do not insert an equation without referring to it. 
+
+For example:
+
+As shown in Equation~\ref{eq:pythagoras}, the Pythagorean theorem relates the sides of a right triangle.
+
+\begin{equation}
+a^2 + b^2 = c^2
+\label{eq:pythagoras}
+\end{equation}
+
+
+\section{Adding an Algorithm}
+
+
+Algorithms are a fundamental part of computer science and engineering research. They allow you to describe a process or a step-by-step method for solving a problem in a clear and standardized way. When presenting an algorithm in your thesis, you should ensure that it is both readable and directly relevant to your discussion. Avoid inserting algorithms that are not mentioned in the main text.
+
+Each algorithm must have:
+\begin{itemize}
+  \item A clear and descriptive caption placed below the algorithm.
+  \item A unique label for referencing in the text.
+  \item Proper citation in the text (e.g., "Algorithm~\ref{alg:max} shows how to find the maximum element.").
+\end{itemize}
+
+Example:
+
+
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwIn{An array $A$ of $n$ numbers}
+\KwOut{The maximum element in $A$}
+max $\leftarrow A[1]$\;
+\For{$i \leftarrow 2$ \KwTo $n$}{
+  \If{$A[i] > max$}{
+    max $\leftarrow A[i]$\;
+  }
+}
+\Return max\;
+\caption{Finding the maximum element in an array}
+\label{alg:max}
+\end{algorithm}
+
+
+
+
+
+
+
+
+	
+
+
+
+%%%% Bibliography %%%%
+%% Do not change here. Use included files. You will add your references to references.bib
+\bibliographystyle{IEEEtran}
+\bibliography{references} %references.bib
+\end{document}
+	
