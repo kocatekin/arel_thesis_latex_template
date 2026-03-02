@@ -1,2 +1,3 @@
-# arel_thesis_latex_template
+# Thesis Template
+
 LaTeX thesis template for undergraduate students.
