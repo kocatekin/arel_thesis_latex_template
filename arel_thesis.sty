@@ -6,9 +6,15 @@
 %% Computer Engineering Department
 %% Istanbul Arel University
 %%
-%% Version: 1.0
+%% Version: 1.1
 %% Date: 2023
-%% 
+%% Changelog
+%% ----------
+%% v1.1 (2026)
+%% - Fixed section/subsection font-size inconsistency.
+%%
+%% v1.0 (2023)
+%% - Initial release
 
 
 \NeedsTeXFormat{LaTeX2e}
@@ -23,9 +29,19 @@
 
 
 \titleformat{\chapter}
-{\large\bfseries\centering}{\thechapter.}{14pt}{}
+{\Large\bfseries\centering}{\thechapter.}{14pt}{}
 
-\titleformat{\section}[block]{\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\section}[block]{\large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalsize\bfseries}
+{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalsize\bfseries}
+{\thesubsubsection}{1em}{}
+
+
 %
 %\ExecuteOptions{letterpaper,oneside,openright}
 %\ExecuteOptions{normalmargins,onehalfspaced,singlespacednotes}
